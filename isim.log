@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\hosse\Desktop\Logic\Parking\FSM_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/hosse/Desktop/Logic/Parking/FSM_tb_isim_beh.wdb 
+Running: C:\Users\hosse\Desktop\Logic\Parking\blinkerTB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/hosse/Desktop/Logic/Parking/blinkerTB_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -28,25 +28,3 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Initial state: state=0000, doorOpen=0, isFull=0, CapacityBCD= 4, nextParkingBCD= 1
-After 1st enter: state=0001, doorOpen=1, isFull=0, CapacityBCD= 4, nextParkingBCD= 1
-After 2nd enter: state=0011, doorOpen=1, isFull=0, CapacityBCD= 3, nextParkingBCD= 2
-After 3rd enter: state=0011, doorOpen=0, isFull=0, CapacityBCD= 2, nextParkingBCD= 3
-After 4th enter: state=0111, doorOpen=1, isFull=0, CapacityBCD= 2, nextParkingBCD= 3
-After 1st exit (location 0): state=0101, doorOpen=1, isFull=0, CapacityBCD= 1, nextParkingBCD= 4
-After 2nd exit (location 1): state=0111, doorOpen=1, isFull=0, CapacityBCD= 2, nextParkingBCD= 2
-After 2nd exit (location 1): state=0110, doorOpen=1, isFull=0, CapacityBCD= 1, nextParkingBCD= 4
-After 2nd exit (location 1): state=0110, doorOpen=0, isFull=0, CapacityBCD= 2, nextParkingBCD= 1
-After 2nd exit (location 1): state=0111, doorOpen=1, isFull=0, CapacityBCD= 2, nextParkingBCD= 1
-After 2nd exit (location 1): state=1111, doorOpen=1, isFull=0, CapacityBCD= 1, nextParkingBCD= 4
-After 2nd exit (location 1): state=1111, doorOpen=0, isFull=1, CapacityBCD= 0, nextParkingBCD= 0
-After 2nd exit (location 1): state=1111, doorOpen=0, isFull=1, CapacityBCD= 0, nextParkingBCD= 0
-After 2nd exit (location 1): state=1111, doorOpen=0, isFull=1, CapacityBCD= 0, nextParkingBCD= 0
-After 2nd exit (location 1): state=1110, doorOpen=1, isFull=1, CapacityBCD= 0, nextParkingBCD= 0
-After 2nd exit (location 1): state=1110, doorOpen=0, isFull=0, CapacityBCD= 1, nextParkingBCD= 1
-After 2nd exit (location 1): state=1010, doorOpen=1, isFull=0, CapacityBCD= 1, nextParkingBCD= 1
-After 2nd exit (location 1): state=0010, doorOpen=1, isFull=0, CapacityBCD= 2, nextParkingBCD= 1
-After 2nd exit (location 1): state=0000, doorOpen=1, isFull=0, CapacityBCD= 3, nextParkingBCD= 1
-After 2nd exit (location 1): state=0000, doorOpen=0, isFull=0, CapacityBCD= 4, nextParkingBCD= 1
-After reset: state=0000, doorOpen=0, isFull=0, CapacityBCD= 4, nextParkingBCD= 1
-Stopped at time : 230 ns :  in File "C:/Users/hosse/Desktop/Logic/Parking/FSM_tb.v" Line 247 

@@ -1,3 +1,3 @@
-verilog work "FSM.v"
-verilog work "FSM_tb.v"
+verilog work "fsm2.v"
+verilog work "blinkerTB.v"
 verilog work "D:/iSE/14.7/ISE_DS/ISE//verilog/src/glbl.v"
