@@ -143,6 +143,33 @@ module FSM(
 //        end
 //    endtask
 
+
+	 always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            blinkLED <= 1'b0;
+            blinkCounter <= 0;
+            blinkState <= 0;
+        end else if (doorOpen) begin
+            if (blinkState < 3) begin // Blink 3 times
+                if (blinkCounter < 2) begin // Adjust for your FPGA clock speed
+                    blinkCounter <= blinkCounter + 1;
+                end else begin
+                    blinkCounter <= 0;
+                    blinkLED <= ~blinkLED; // Toggle LED
+                    if (blinkLED) blinkState <= blinkState + 1; // Increment blinkState on LED off
+                end
+            end else begin
+                blinkLED <= 1'b0; // Ensure LED is off after blinking
+                blinkState <= 0;
+                doorOpen <= 1'b0; // Close door after blinking
+            end
+        end else begin
+            blinkLED <= 1'b0;
+            blinkCounter <= 0;
+            blinkState <= 0;
+        end
+    end
+
 	 
 endmodule
 
